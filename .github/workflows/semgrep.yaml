@@ -22,7 +22,7 @@ jobs:
 
     container:
       # A Docker image with Semgrep installed.
-      image: semgrep/semgrep:canary
+      image: semgrep/semgrep-nightly:pr-4557
 
     # Skip any PR created by dependabot to avoid permission issues:
     if: (github.actor != 'dependabot[bot]')
